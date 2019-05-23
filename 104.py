@@ -2,11 +2,7 @@
 # https://leetcode.com/problems/maximum-depth-of-binary-tree/
 
 def maxDepth(root):
-    right_height = 0
-    left_height = 0
-
-    if root is None:
-        return 0
+    if root is None: return 0
 
     right_height = maxDepth(root.right)
     left_height = maxDepth(root.left)
