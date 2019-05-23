@@ -4,8 +4,8 @@
 def invertTree(root):
     if root is None: return None
         
-    right = self.invertTree(root.right)
-    left = self.invertTree(root.left)
+    right = invertTree(root.right)
+    left = invertTree(root.left)
         
     root.right = left
     root.left = right
